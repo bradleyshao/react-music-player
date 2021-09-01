@@ -1,0 +1,48 @@
+.player-container {
+  min-height: 20vh;
+  //   put everyting in one line
+  display: flex;
+  align-items: center;
+  //   background-color: lightpink;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.time-control {
+  width: 50%;
+  display: flex;
+
+  input {
+    width: 100%;
+    // put space top bottom 1rem and lef right 0rem
+    padding: 1rem, 0rem;
+    background: transparent;
+  }
+
+  p {
+    //start and end time in p tag
+    padding: 1rem;
+  }
+}
+
+.play-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  width: 30%;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 98%;
+  }
+
+  .play-control {
+    width: 60%;
+  }
+}
